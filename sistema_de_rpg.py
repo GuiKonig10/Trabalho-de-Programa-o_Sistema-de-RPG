@@ -17,7 +17,7 @@ def adicionar_item(personagem, item):
         personagem[5].append(item)
         print(f"{item[0]} adicionado ao inventário de {personagem[0]}.")
     else:
-        print("⚠️Inventário cheio!⚠️")
+        print("Inventário cheio!")
 
 def remover_item(personagem, nome_item):
     for item in personagem[5]:
@@ -55,7 +55,7 @@ def combate(p1, p2):
         defensor[3] -= dano
         print(f"{atacante[0]} atacou {defensor[0]} causando {dano} de dano! (HP {defensor[0]}: {defensor[3]})")
         if defensor[3] <= 0:
-            print(f"\n🏆 {atacante[0]} venceu o combate!🏆 ")
+            print(f"\n{atacante[0]} venceu o combate!")
             return
 
 def menu():
@@ -142,6 +142,7 @@ menu()
 
         
     
+
 
 
 
