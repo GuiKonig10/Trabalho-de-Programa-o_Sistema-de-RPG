@@ -7,7 +7,7 @@ class Personagem:
         self.capacidade = 50
         self.inventario = []
         self.classe = "Personagem"
-
+        
     def peso_total(self):
         return sum(item.peso for item in self.inventario)
 
@@ -34,7 +34,8 @@ class Personagem:
         else:
             for item in self.inventario:
                 print(f"- {item}")
-              def usar_pocao(self):
+
+    def usar_pocao(self):
         for item in self.inventario:
             if item.tipo == "poção":
                 self.hp += item.efeito
@@ -44,3 +45,23 @@ class Personagem:
                 print(f"{self.nome} usou {item.nome} e recuperou {item.efeito} HP! (HP atual: {self.hp})")
                 return
         print(f"{self.nome} não tem poções!")
+
+class Guerreiro(Personagem):
+    def _init_(self, nome, nivel):
+        super()._init_(nome, nivel)
+        self.classe = "Guerreiro"
+
+
+class Mago(Personagem):
+    def _init_(self, nome, nivel):
+        super()._init_(nome, nivel)
+        self.classe = "Mago"
+
+
+class Arqueiro(Personagem):
+    def _init_(self, nome, nivel):
+        super()._init_(nome, nivel)
+        self.classe = "Arqueiro"
+
+
+
