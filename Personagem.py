@@ -1,3 +1,4 @@
+from Item import Item
 class Personagem:
     def _init_(self, nome, nivel):
         self.nome = nome
