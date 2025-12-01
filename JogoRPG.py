@@ -1,3 +1,7 @@
+from Personagem import Guerreiro, Mago, Arqueiro
+from Item import Item
+from Combate import Combate
+
 class JogoRPG:
     def _init_(self):
         self.personagens = []
