@@ -1,3 +1,4 @@
+from Personagem import Personagem
 class Combate:
     @staticmethod
     def lutar(p1, p2):
